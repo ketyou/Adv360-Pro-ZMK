@@ -80,11 +80,11 @@
 
         layer_vim_like {
             bindings = <
-         &trans  &trans  &trans         &trans  &trans  &trans                     &trans                                                                   &trans       &trans    &trans  &trans     &trans  &trans           &trans
-         &trans  &trans  &trans         &trans  &trans  &trans                     &trans                                                                   &trans  &kp PAGE_UP    &trans  &trans     &trans  &trans           &trans
-         &trans  &trans  &trans  &kp PAGE_DOWN  &trans  &trans                     &trans      &trans  &trans                  &trans  &mt RCTRL RC(TAB)    &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans           &trans
- &kp LEFT_SHIFT  &trans  &trans         &trans  &trans  &trans                                         &trans                  &trans                                 &kp PG_DN    &trans  &trans     &trans  &trans  &kp RIGHT_SHIFT
-      &kp LCTRL  &trans  &trans         &trans  &trans                    &mt LCTRL SPACE  &kp DELETE  &trans                  &trans          &kp ENTER  &kp BSPC                 &trans  &trans     &trans  &trans           &trans
+         &trans  &trans  &trans         &trans  &trans  &trans                     &trans                                                                              &trans       &trans    &trans  &trans     &trans  &trans           &trans
+         &trans  &trans  &trans         &trans  &trans  &trans                     &trans                                                                              &trans  &kp PAGE_UP    &trans  &trans     &trans  &trans           &trans
+         &trans  &trans  &trans  &kp PAGE_DOWN  &trans  &trans                     &trans      &trans  &trans                  &kp K_APPLICATION  &mt RCTRL RC(TAB)    &trans     &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans           &trans
+ &kp LEFT_SHIFT  &trans  &trans         &trans  &trans  &trans                                         &trans                             &trans                                 &kp PG_DN    &trans  &trans     &trans  &trans  &kp RIGHT_SHIFT
+      &kp LCTRL  &trans  &trans         &trans  &trans                    &mt LCTRL SPACE  &kp DELETE  &trans                             &trans          &kp ENTER  &kp BSPC                 &trans  &trans     &trans  &trans           &trans
             >;
         };
 
