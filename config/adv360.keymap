@@ -80,11 +80,11 @@
 
         layer_vim_like {
             bindings = <
-         &trans      &trans      &trans      &trans      &trans  &trans                     &trans                                                                                                 &trans    &trans     &trans  &trans     &trans   &trans           &trans
-         &trans      &trans      &trans      &trans      &trans  &trans                     &trans                                                                                                 &trans    &trans  &kp PG_UP  &trans     &trans   &trans           &trans
-         &trans  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &trans                     &trans  &kp LC(LEFT_SHIFT)             &trans                  &kp K_APPLICATION  &mt LCTRL LC(TAB)  &kp HOME  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp END           &trans
- &kp LEFT_SHIFT      &trans      &trans      &trans      &trans  &trans                                                 &mt LC(HOME) HOME                  &mt LC(HOME) HOME                                 &trans  &kp PG_DN  &trans     &trans   &trans  &kp RIGHT_SHIFT
-      &kp LCTRL      &trans      &trans      &trans      &trans                    &mt LCTRL SPACE              &trans    &mt LC(END) END                    &mt LC(END) END          &kp ENTER  &kp BSPC               &trans  &trans     &trans   &trans           &trans
+         &trans      &trans      &kp F2      &trans  &kp LA(F4)  &trans                     &trans                                                                                         &trans    &trans     &trans  &kp LA(F8)     &trans   &trans           &trans
+         &trans      &trans      &trans      &trans      &trans  &trans                     &trans                                                                                         &trans    &trans  &kp PG_UP      &trans     &trans   &trans           &trans
+         &trans  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &trans                     &trans  &kp LC(LEFT_SHIFT)             &trans                          &kp LC(C)  &kp LC(V)  &kp HOME  &kp LEFT   &kp DOWN      &kp UP  &kp RIGHT  &kp END        &kp LC(X)
+ &kp LEFT_SHIFT      &trans      &trans      &trans      &trans  &trans                                                 &mt LC(HOME) HOME                  &mt LC(HOME) HOME                         &trans  &kp PG_DN      &trans     &trans   &trans  &kp RIGHT_SHIFT
+      &kp LCTRL      &trans      &trans      &trans      &trans                    &mt LCTRL SPACE              &trans    &mt LC(END) END                    &mt LC(END) END  &kp ENTER  &kp BSPC               &trans      &trans     &trans   &trans           &trans
             >;
         };
 
