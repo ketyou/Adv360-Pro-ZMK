@@ -45,6 +45,29 @@
             bindings = <&kp MINUS>;
             key-positions = <70 44>;
         };
+
+        combo_ltu {
+            bindings = <&ltu_macro>;
+            key-positions = <69 44>;
+        };
+    };
+
+    macros {
+        ltu_macro: ltu_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp L &kp T &kp U>;
+
+            label = "LTU_MACRO";
+        };
+
+        n00_macro: n00_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp N0 &kp N0>;
+
+            label = "N00_MACRO";
+        };
     };
 
     keymap {
@@ -65,7 +88,7 @@
 &kp ESC    &kp N1     &kp N2                &kp N3             &kp N4           &kp N5    &trans                                                                         &mo 3                &kp GRAVE      &kp KP_NUMLOCK  &kp LS(MINUS)  &kp KP_DIVIDE  &kp LS(SINGLE_QUOTE)  &kp MINUS
 &kp TAB    &kp F2     &kp KP_DIVIDE         &kp UP             &kp PG_UP        &kp TAB   &kp INTERNATIONAL_1                                                            &kp EQUAL            &kp LS(MINUS)  &kp N7          &kp N8         &kp N9         &kp MINUS             &kp LEFT_BRACKET
 &kp GRAVE  &kp HOME   &kp LEFT_ARROW        &kp LS(SEMICOLON)  &kp RIGHT_ARROW  &kp END   &kp TAB              &mt LEFT_ALT LA(TAB)  &trans        &kp LC(C)  &kp LC(V)  &kp INTERNATIONAL_3  &kp N0         &kp N4          &kp N5         &kp N6         &kp LS(SEMICOLON)     &kp SQT
-&kp LSHFT  &kp LC(Z)  &kp LS(SINGLE_QUOTE)  &kp DOWN           &kp PG_DN        &kp BSPC                                             &kp HOME      &kp ESC                                    &kp COMMA      &kp N1          &kp N2         &kp N3         &kp N0                &kp RSHFT
+&kp LSHFT  &kp LC(Z)  &kp LS(SINGLE_QUOTE)  &kp DOWN           &kp PG_DN        &kp BSPC                                             &kp HOME      &kp ESC                                    &kp COMMA      &kp N1          &kp N2         &kp N3         &n00_macro            &kp RSHFT
 &kp LCTRL  &mo 4      &kp LGUI              &kp LEFT           &kp RIGHT                  &mt LCTRL SPACE      &trans                &kp END       &kp TAB    &kp ENTER  &kp BACKSPACE                       &kp UP          &kp DOWN       &kp PERIOD     &kp N0                &mo 2
             >;
         };
