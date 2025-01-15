@@ -36,18 +36,13 @@
         compatible = "zmk,combos";
 
         combo_japanese {
-            bindings = <&kp LANG1>;
+            bindings = <&kp GRAVE>;
             key-positions = <70 41>;
         };
 
         combo_minus {
             bindings = <&kp MINUS>;
             key-positions = <70 44>;
-        };
-
-        combo_eisu {
-            bindings = <&kp LANG2>;
-            key-positions = <70 43>;
         };
     };
 
