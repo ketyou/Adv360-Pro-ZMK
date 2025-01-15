@@ -50,6 +50,11 @@
             bindings = <&ltu_macro>;
             key-positions = <69 44>;
         };
+
+        combo_keypad {
+            bindings = <&tog 1>;
+            key-positions = <42 70>;
+        };
     };
 
     macros {
