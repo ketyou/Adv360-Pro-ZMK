@@ -13,7 +13,6 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -54,6 +53,16 @@
         combo_keypad {
             bindings = <&tog 1>;
             key-positions = <42 70>;
+        };
+
+        combo_japanese2 {
+            bindings = <&kp GRAVE>;
+            key-positions = <41 69>;
+        };
+
+        combo_keypad2 {
+            bindings = <&tog 1>;
+            key-positions = <42 69>;
         };
     };
 
@@ -120,11 +129,11 @@
 
         layer_vim_like {
             bindings = <
-&trans          &trans      &kp F2      &trans      &kp LA(F4)     &trans     &trans                                                                                    &trans    &trans     &trans     &kp LA(F8)  &trans     &trans     &trans
-&trans          &trans      &kp LC(W)   &trans      &kp LC(LS(R))  &kp LC(T)  &trans                                                                                    &trans    &kp LC(Y)  &kp PG_UP  &kp PG_UP   &kp LC(C)  &kp LC(C)  &trans
-&kt LSHIFT      &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT     &kp MINUS  &kp LC(TAB)      &kp LC(LEFT_SHIFT)  &trans                 &kp LC(C)          &kp LC(V)  &kp HOME  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &kp END    &kp LC(X)
-&kp LEFT_SHIFT  &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)      &trans                                          &mt LC(HOME) HOME      &mt LC(HOME) HOME                       &kp LC(N)  &kp PG_DN  &kp PG_DN   &kp LC(V)  &kp LC(V)  &kp RIGHT_SHIFT
-&kp LCTRL       &trans      &trans      &trans      &trans                    &mt LCTRL SPACE  &trans              &mt LC(END) END        &mt LC(END) END    &kp ENTER  &kp BSPC             &trans     &trans      &trans     &trans     &trans
+&trans          &trans      &kp F2      &trans      &kp LA(F4)     &trans     &trans                                                                                    &trans    &trans     &trans     &kp LA(F8)  &trans     &trans      &trans
+&trans          &trans      &kp LC(W)   &trans      &kp LC(LS(R))  &kp LC(T)  &trans                                                                                    &trans    &kp LC(Y)  &kp PG_UP  &kp PG_UP   &kp LC(C)  &kp LC(V)   &trans
+&sk LSHIFT      &kp LSHIFT  &kp LSHIFT  &kp LSHIFT  &kp LSHIFT     &kp MINUS  &kp LC(TAB)      &kp LC(LEFT_SHIFT)  &trans                 &kp LC(C)          &kp LC(V)  &kp HOME  &kp LEFT   &kp DOWN   &kp UP      &kp RIGHT  &kp END     &kp LC(X)
+&kp LEFT_SHIFT  &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)      &trans                                          &mt LC(HOME) HOME      &mt LC(HOME) HOME                       &kp LC(N)  &kp PG_DN  &kp PG_DN   &kp LC(V)  &sk LSHIFT  &kp RIGHT_SHIFT
+&kp LCTRL       &trans      &trans      &trans      &trans                    &mt LCTRL SPACE  &trans              &mt LC(END) END        &mt LC(END) END    &kp ENTER  &kp BSPC             &trans     &trans      &trans     &trans      &trans
             >;
         };
     };
