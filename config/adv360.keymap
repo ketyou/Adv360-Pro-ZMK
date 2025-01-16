@@ -35,7 +35,7 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_japanese {
+        combo_japanese1 {
             bindings = <&kp GRAVE>;
             key-positions = <70 41>;
         };
