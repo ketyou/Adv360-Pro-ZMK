@@ -83,7 +83,7 @@
 
             label = "N00_MACRO";
         };
-        toggle_shift_cp: {
+        toggle_shift_cp: toggle_shift_cp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
