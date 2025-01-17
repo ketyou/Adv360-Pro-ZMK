@@ -83,20 +83,6 @@
 
             label = "N00_MACRO";
         };
-        toggle_shift_cp: toggle_shift_cp {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                // 左シフトのトグル状態を確認
-                &if (is_key_toggled(&kp LSHIFT)) {
-                    // 左シフトがオンの場合、オフにする
-                    <&macro_tap>, <&kt LSHIFT &kp LC(C)>
-                } else {
-                    // 左シフトがオフの場合、そのまま次のアクションを実行
-                    &kp LC(C); // 次のアクションを実行
-                }
-            >;
-        };
     };
 
     keymap {
